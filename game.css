@@ -1,0 +1,172 @@
+body {
+  font-family: "Inter", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #191724;
+  color: #e0def4;
+  gap: 364px;
+  height: 100vh;
+}
+
+.grid-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 312px repeat(4, 64px) 312px;
+  grid-template-rows: 64px 312px 48px;
+  gap: 8px;
+}
+
+.container-style {
+  background-color: #2a273f;
+  border-radius: 8px;
+}
+
+.user-name-container {
+  grid-column: 1 / 2;
+}
+
+.computer-name-container {
+  grid-column: 6 / 7;
+}
+
+.round-container {
+  grid-column: 3 / 5;
+}
+
+.user-score-container {
+  grid-column: 2 / 3;
+}
+
+.computer-score-container {
+  grid-column: 5 / 6;
+}
+
+.user-choice-container {
+  grid-column: 1 / 2;
+  grid-row: 2;
+}
+
+.computer-choice-container {
+  grid-column: 6 / 7;
+  grid-row: 2;
+}
+
+.btn-container {
+  grid-column: 1 / 2;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.round-result-container {
+  grid-column: 2 / 6;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.btn-reset {
+  grid-column: 3 / 5;
+  grid-row: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-reset button {
+  padding: 0 24px;
+}
+
+button {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #31748f;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #41849f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  background-color: #275d73;
+  transform: translateY(0);
+}
+
+#user-score,
+#computer-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.round-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  height: 100%;
+}
+
+.round-label {
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+}
+
+.round-squares {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.square {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background-color: #6e6a86;
+}
+
+.square.active {
+  background-color: #c4a7e7;
+}
+
+.user-name,
+.computer-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 24px;
+}
+
+.user-choice-container,
+.computer-choice-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+svg {
+  padding-bottom: 24px;
+}

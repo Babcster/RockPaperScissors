@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link href="game.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item user-name-container container-style">
+        <div class="user-name">Player</div>
+      </div>
+      <div class="grid-item user-score-container container-style">
+        <div id="user-score">0</div>
+      </div>
+      <div class="grid-item round-container container-style">
+        <div class="round-info">
+          <div class="round-label">Round</div>
+          <div class="round-squares">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item computer-score-container container-style">
+        <div id="computer-score">0</div>
+      </div>
+      <div class="grid-item computer-name-container container-style">
+        <div class="computer-name">Computer</div>
+      </div>
+
+      <div class="btn-container">
+        <button type="button">Rock</button>
+        <button type="button">Paper</button>
+        <button type="button">Scissors</button>
+      </div>
+
+      <div class="round-result-container">
+        <div class="round-result-text">Tie!</div>
+      </div>
+
+      <div class="btn-reset">
+        <button id="btn-reset" type="button">Reset</button>
+      </div>
+
+      <div class="user-choice-container container-style"></div>
+      <div class="computer-choice-container container-style"></div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
